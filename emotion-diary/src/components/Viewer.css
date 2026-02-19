@@ -1,0 +1,56 @@
+.Viewer > section {
+  width: 100%;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Viewer > section > h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.Viewer .imageSection .imageWrapper {
+  width: 250px;
+  height: 250px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  font-size: 25px;
+}
+
+.Viewer .imageWrapper1 {
+  background-color: rgb(100, 201, 100);
+}
+.Viewer .imageWrapper2 {
+  background-color: rgb(157, 215, 114);
+}
+.Viewer .imageWrapper3 {
+  background-color: rgb(253, 206, 23);
+}
+.Viewer .imageWrapper4 {
+  background-color: rgb(253, 132, 70);
+}
+.Viewer .imageWrapper5 {
+  background-color: rgb(253, 86, 95);
+}
+
+.Viewer .contentWrapper {
+  width: 100%;
+  background-color: rgb(236, 236, 236);
+  border-radius: 12px;
+  overflow-wrap: break-word;
+}
+
+.Viewer .contentWrapper > p {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2.5;
+  text-align: left;
+}
