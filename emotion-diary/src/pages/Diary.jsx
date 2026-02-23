@@ -28,7 +28,7 @@ const Diary = () => {
   const diary = useDiary(id);
 
   /// 스켈레톤ui 가튼그 보여주기 데이터로딩중
-  if (!diary) return null;
+  if (!diary) return <div>데이터 로딩중이여유 ~ </div>;
 
   const { createdDate, emotionId, content } = diary;
   const title = getStringedDate(new Date(createdDate));

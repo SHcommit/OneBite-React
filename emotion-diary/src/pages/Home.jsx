@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Button from "../components/Button";
 import DiaryList from "../components/DiaryList";
 
+// MARK: - Helpers
 const getMonthlyData = (pivotDate, data) => {
   const beginTime = new Date(
     pivotDate.getFullYear(),
@@ -28,6 +29,7 @@ const getMonthlyData = (pivotDate, data) => {
   );
 };
 
+// MARK: - Home
 const Home = () => {
   const [pivotDate, setPivotDate] = useState(new Date());
   const data = useContext(DiaryStateContext);

@@ -8,6 +8,8 @@ import NotFound from "./pages/NotFound.jsx";
 import Edit from "./pages/Edit.jsx";
 import Button from "./components/Button.jsx";
 
+import PerfLab from "./pages/PerfLab/PerfLab";
+
 // const mockData = [
 //   {
 //     id: 1,
@@ -29,6 +31,8 @@ import Button from "./components/Button.jsx";
 //   },
 // ];
 
+/// state넘 많으
+/// action과 reducer를 통해서 상태관리를 하자
 function reducer(state, action) {
   let nextState;
 
@@ -74,6 +78,7 @@ function App() {
     }
     // console.log(parsedData);
     if (parsedData.length == 0) {
+      setIsLoading(false);
       return;
     }
     dispatch({
@@ -145,6 +150,7 @@ function App() {
             <Route path="/diary/:id" element={<Diary />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/edit/:id" element={<Edit />} />
+            <Route path="/perf" element={<PerfLab />} />
           </Routes>
         </DiaryDispatchContext.Provider>
       </DiaryStateContext.Provider>
